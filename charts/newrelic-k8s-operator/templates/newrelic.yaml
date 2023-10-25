@@ -3,4 +3,4 @@ kind: Monitor
 metadata:
   name: newrelic
 spec:
-  version: {{.Values.version}}
+  version: '{{.Values.version}}'
