@@ -4,7 +4,7 @@ metadata:
   name: nribundle-minimal
 spec:
   global:
-    cluster: "cluster"
+    cluster: ""
     licenseKey: ""
     lowDataMode: true
   kubeEvents:
