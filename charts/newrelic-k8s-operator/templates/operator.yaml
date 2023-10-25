@@ -436,7 +436,7 @@ spec:
         - --upstream=http://127.0.0.1:8080/
         - --logtostderr=true
         - --v=0
-        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
+        image: 709825985650.dkr.ecr.us-east-1.amazonaws.com/new-relic/newrelic-k8s-operator:kube-rbac-proxy-v0.13.1
         name: kube-rbac-proxy
         ports:
         - containerPort: 8443
@@ -459,7 +459,7 @@ spec:
         - --metrics-bind-address=127.0.0.1:8080
         - --leader-elect
         - --leader-election-id=newrelic-k8s-operator
-        image: newrelic/newrelic-k8s-operator:{{.Chart.AppVersion}}
+        image: 709825985650.dkr.ecr.us-east-1.amazonaws.com/new-relic/newrelic-k8s-operator:0.0.1
         livenessProbe:
           httpGet:
             path: /healthz
